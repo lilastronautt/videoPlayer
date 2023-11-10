@@ -1,4 +1,4 @@
-import "./BAckdrop.css";
+import "./Backdrop.css";
 
 const Backdrop = () => {
   return <div className="backdrop"></div>;

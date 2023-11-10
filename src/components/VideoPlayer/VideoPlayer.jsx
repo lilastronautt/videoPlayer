@@ -22,7 +22,7 @@ const VideoPlayer = ({ videoUrl, getState, getSeekTime, name }) => {
       videoRef.current.currentTime = 0;
       videoRef.current.play();
       setCurrentTime(() => 0);
-      setIsPlaying(() => true);
+      setIsPlaying((prev) => !prev);
       getState(() => isPlaying);
       setControlReplaySeek(() => (controlReplaySeek * 100 + 1) / 100);
     }
