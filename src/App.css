@@ -1,0 +1,64 @@
+.video_main__cont {
+  width: 50vw;
+  margin: 1rem auto;
+  text-align: center;
+}
+
+@media (max-width: 1100px) {
+  .video_main__cont {
+    width: 70vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .video_main__cont {
+    width: 90vw;
+  }
+}
+
+@media (max-width: 550px) {
+  .video_main__cont {
+    margin-top: 3rem;
+  }
+}
+
+.video_input__btn {
+  background: black;
+  width: 50%;
+  color: #d7dadc;
+  border: 1px solid black;
+  padding: 2rem;
+  border-radius: 8px;
+  margin: 1rem auto;
+}
+
+@media (max-width: 670px) {
+  .video_input__btn {
+    width: 80%;
+  }
+}
+
+.video_input__btn:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.video_error__msg {
+  color: red;
+  font-size: 1.2rem;
+}
+
+.help_btn {
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  background-color: black;
+  color: #dad7dc;
+  padding: 0.3rem 0.6rem;
+  border-radius: 8px;
+}
+
+.help_btn:hover {
+  color: white;
+  cursor: pointer;
+}

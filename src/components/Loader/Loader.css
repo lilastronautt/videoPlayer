@@ -1,0 +1,26 @@
+.loader_cont {
+  background: #dad7dc;
+  border-radius: 8px;
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0.5rem;
+}
+
+.loader {
+  border: 5px solid grey;
+  border-top: 5px solid black;
+  border-radius: 50%;
+  animation: ani 1500ms 1s 100 linear forwards;
+}
+
+@keyframes ani {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

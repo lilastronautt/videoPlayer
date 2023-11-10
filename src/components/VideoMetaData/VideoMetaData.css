@@ -1,0 +1,25 @@
+.videometadata_cont {
+  color: #dad7dc;
+  background: black;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: left;
+  width: 85%;
+  margin: 1rem auto;
+}
+
+@media (min-width: 1163px) {
+  .videometadata_cont {
+    position: absolute;
+    right: 3rem;
+    top: 50%;
+    margin-top: -193px;
+    width: 15rem;
+  }
+}
+
+@media (max-width: 468px) {
+  .videometadata_cont {
+    font-size: 0.9rem;
+  }
+}
