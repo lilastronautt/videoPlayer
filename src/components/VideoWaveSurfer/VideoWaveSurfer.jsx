@@ -43,7 +43,7 @@ const VideoWaveSurfer = ({ audioSrc, videoState, time, video }) => {
         wavesurfer.current.play();
       }
     }
-  }, [videoState]);
+  }, [videoState, time]);
 
   // handling the current time to seekto for wavesurfer using the value recieved from videoplayer component
   useEffect(() => {

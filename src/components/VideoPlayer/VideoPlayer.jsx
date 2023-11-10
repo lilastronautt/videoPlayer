@@ -22,8 +22,8 @@ const VideoPlayer = ({ videoUrl, getState, getSeekTime, name }) => {
       videoRef.current.currentTime = 0;
       videoRef.current.play();
       setCurrentTime(() => 0);
-      setIsPlaying((prev) => !prev);
-      getState(() => isPlaying);
+      setIsPlaying(() => true);
+      getState(false);
       setControlReplaySeek(() => (controlReplaySeek * 100 + 1) / 100);
     }
   };
@@ -74,6 +74,7 @@ const VideoPlayer = ({ videoUrl, getState, getSeekTime, name }) => {
   useEffect(() => {
     const handleSpaceBarPress = (event) => {
       if (event.key === " ") {
+        event.preventDefault();
         togglePlayPause();
       }
     };
@@ -128,6 +129,7 @@ const VideoPlayer = ({ videoUrl, getState, getSeekTime, name }) => {
             ref={videoRef}
             autoPlay={isPlaying}
             style={{ display: "none" }}
+            controls={false}
           ></video>
 
           <div
